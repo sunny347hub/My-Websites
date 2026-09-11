@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - MS Shopping</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <img src="logo.png" class="auth-logo" alt="MS Shopping">
+
+        <h1>Create Account</h1>
+
+        <p>Create your MS Shopping account</p>
+
+        <form class="auth-form" id="signupForm">
+
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="example@gmail.com"
+                required
+            >
+
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                minlength="8"
+                placeholder="Create password"
+                required
+            >
+
+            <label for="confirmPassword">Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                minlength="8"
+                placeholder="Confirm password"
+                required
+            >
+
+            <button type="submit" class="auth-submit">
+                Sign Up
+            </button>
+
+        </form>
+
+        <div class="auth-bottom">
+
+            <p>Already have an account?</p>
+
+            <a href="login.html">Login</a>
+
+            <br><br>
+
+            <a href="index.html">Back to Home</a>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

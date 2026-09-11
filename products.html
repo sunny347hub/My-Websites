@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MS Shopping</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <a href="home.html" class="nav-logo">
+            MS Shopping
+        </a>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products"
+            >
+
+            <button onclick="searchProducts()">
+                Search
+            </button>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="home.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="cart.html">
+                Cart
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div class="category-bar">
+
+        <a href="products.html">☰ All Products</a>
+
+        <a href="#">Mobiles</a>
+
+        <a href="#">Laptops</a>
+
+        <a href="#">Fashion</a>
+
+        <a href="#">Deals</a>
+
+    </div>
+
+    <main class="products-container">
+
+        <div class="page-heading">
+
+            <h1>All Products</h1>
+
+            <p>
+                Explore our latest products and offers.
+            </p>
+
+        </div>
+
+        <div class="product-grid" id="productList">
+
+            <div class="product-card">
+
+                <img src="asus laptop.webp" class="product-image" alt="ASUS Laptop">
+
+                <h3 class="product-title">
+                    ASUS Vivobook S Laptop
+                </h3>
+                <div class="product-title">
+                        ASUS Vivobook S Laptop |
+                        Metallic Design |
+                        Intel Core Processor |
+                        Thin & Light Laptop
+                    </div>
+
+                <div class="rating">
+                    4.4 ★★★★☆
+                </div>
+
+                <div class="price">
+                    ₹64,999
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('ASUS Vivobook S Laptop',64999,'asus laptop.webp')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="iphone 17.webp" class="product-image" alt="iPhone">
+
+                <h3 class="product-title">
+                    Apple iPhone 17
+                </h3>
+                <div class="product-title">
+                        Apple iPhone 17 |
+                        Sleek Design |
+                        Advanced Camera System |
+                        iOS Operating System
+                    </div>
+                <div class="rating">
+                    4.6 ★★★★★
+                </div>
+
+                <div class="price">
+                    ₹79,999
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('Apple iPhone 17',79999,'iphone 17.webp')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="mac book.webp" class="product-image" alt="MacBook">
+
+                <h3 class="product-title">
+                    Apple MacBook
+                </h3>
+                <div class="product-title">
+                        Apple MacBook |
+                        Retina Display |
+                        M1 Chip Performance |
+                        Long Battery Life
+                    </div>
+                <div class="rating">
+                    4.7 ★★★★★
+                </div>
+
+                <div class="price">
+                    ₹99,999
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('Apple MacBook',99999,'mac book.webp')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="motorla.webp" class="product-image" alt="Motorola">
+
+                <h3 class="product-title">
+                    Motorola G57 Power
+                </h3>
+                <div class="product-title">
+                        Motorola G57 Power |
+                        High Performance |
+                        Long Battery Life |
+                        Sleek Design
+                    </div>
+                <div class="rating">
+                    4.3 ★★★★☆
+                </div>
+
+                <div class="price">
+                    ₹29,999
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('Motorola G57 Power',29999,'motorla.webp')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="oneplus.jpg" class="product-image" alt="OnePlus">
+
+                <h3 class="product-title">
+                    OnePlus Smartphone
+                </h3>
+                <div class="product-title">
+                        OnePlus Smartphone |
+                        Fast Performance |
+                        High-Resolution Camera |
+                        Sleek Design
+                    </div>
+                <div class="rating">
+                    4.5 ★★★★☆
+                </div>
+
+                <div class="price">
+                    ₹38,999
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('OnePlus Smartphone',38999,'oneplus.jpg')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="US polo ASSN.jpg" class="product-image" alt="US Polo">
+
+                <h3 class="product-title">
+                    US Polo ASSN Fashion
+                </h3>
+                <div class="product-title">
+                        US Polo ASSN Fashion |
+                        Trendy Apparel |
+                        Comfortable Fit |
+                        Stylish Design
+                    </div>
+                <div class="rating">
+                    4.4 ★★★★☆
+                </div>
+
+                <div class="price">
+                    ₹2,499
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('US Polo ASSN Fashion',2499,'US polo ASSN.jpg')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="Red Tape.avif" class="product-image" alt="Red Tape">
+
+                <h3 class="product-title">
+                    Red Tape Shoes
+                </h3>
+                <div class="product-title">
+                        Red Tape Shoes |
+                        Stylish Footwear |
+                        Comfortable Fit |
+                        Durable Material
+                    </div>
+                <div class="rating">
+                    4.5 ★★★★☆
+                </div>
+
+                <div class="price">
+                    ₹3,499
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('Red Tape Shoes',3499,'Red Tape.jpg')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <h2>MS Shopping</h2>
+
+        <p>© 2026 MS Shopping</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

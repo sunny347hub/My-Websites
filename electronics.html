@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics - MS Shopping</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <a href="home.html" class="nav-logo">
+            MS Shopping
+        </a>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products"
+            >
+
+            <button onclick="searchProducts()">
+                Search
+            </button>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="home.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="cart.html">
+                Cart
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div class="category-bar">
+
+        <a href="products.html">☰ All Products</a>
+
+        <a href="#">Mobiles</a>
+
+        <a href="#">Laptops</a>
+
+        <a href="#">Fashion</a>
+
+        <a href="#">Deals</a>
+
+    </div>
+
+    <main class="products-container">
+
+        <div class="page-heading">
+
+            <h1>All Products</h1>
+
+            <p>
+                Explore our latest products and offers.
+            </p>
+
+        </div>
+        <div class="product-grid" id="productList">
+
+            <div class="product-card">
+
+                <img src="tv.avif" class="product-image" alt="TV">
+
+                <h3 class="product-title">
+                55" 4K Ultra HD Smart TV
+                </h3>
+
+                <div class="product-description">
+                    LG 189 cms (75 inches) NU87 AI Series|
+                    Nano 4K Ultra HD (3840 x 2160)|
+                    Smart webOS LED TV 75NU870BPLA 2026
+                </div>
+
+                <div class="rating">
+                    4.2 ★★★★☆
+                </div>
+
+                <div class="price">
+                    ₹1,89,999
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('4K Ultra HD Smart TV',189999,'tv.avif')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="alex.png" class="product-image" alt="Alexa">
+
+                <h3 class="product-title">
+                    Amazon Alexa
+                </h3>
+
+                <div class="product-description">
+                    Amazon Alexa |
+                    Voice Control |
+                    Smart Home Hub |
+                    360° Audio |
+                    Built-in Assistant
+                </div>
+
+                <div class="rating">
+                    4.2 ★★★★☆
+                </div>
+
+                <div class="price">
+                    ₹7,999
+                </div>
+
+                <button
+                    class="add-cart-btn"
+                    onclick="addToCart('Amazon Alexa',7999,'alexa.png')">
+                    Add to Cart
+                </button>
+
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <h2>MS Shopping</h2>
+
+        <p>© 2026 MS Shopping</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
